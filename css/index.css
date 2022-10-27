@@ -1,0 +1,22 @@
+.table a{
+    color: #f1f1f1;
+    padding: 5px;
+    text-decoration: none;
+  }
+  #navbarSupportedContent{
+    justify-content: space-between;
+  }
+  #navbarSupportedContent > form{
+    flex-grow: 0;
+  }
+  .Login{
+    color: #f1f1f1;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .register{
+    color: #f1f1f1;
+    padding: 5px;
+    text-decoration: none;
+  }
+ 
