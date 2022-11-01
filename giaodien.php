@@ -91,6 +91,10 @@
                             <a href=""class="product-thump">
                                 <img src="img/Body Champ Cardio Dual Trainer.png" alt="">
                             </a>
+                            <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
+                            <a href=""class="product-heart"><i class="fa-solid fa-heart"></i></a>
+                            <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                         </div>
                         <div class="product-bottom">
                             <a href="" class="product-cat">Machine</a>
@@ -105,6 +109,10 @@
                             <a href=""class="product-thump">
                                 <img src="img/Body Solid GCEC340 Cam Series Leg Extension Curl Machine.png" alt="">
                             </a>
+                            <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
+                            <a href=""class="product-heart"><i class="fa-solid fa-heart"></i></a>
+                            <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                         </div>
                         <div class="product-bottom">
                             <a href="" class="product-cat">Machine</a>
@@ -119,6 +127,10 @@
                             <a href=""class="product-thump">
                                 <img src="img/Bowflex BXE116 Elliptical.png" alt="">
                             </a>
+                            <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
+                            <a href=""class="product-heart"><i class="fa-solid fa-heart"></i></a>
+                            <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                         </div>
                         <div class="product-bottom">
                             <a href="" class="product-cat">Machine</a>
@@ -133,6 +145,10 @@
                             <a href=""class="product-thump">
                                 <img src="img/ETHOS GHD Weight Bench.png" alt="">
                             </a>
+                            <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
+                            <a href=""class="product-heart"><i class="fa-solid fa-heart"></i></a>
+                            <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                         </div>
                         <div class="product-bottom">
                             <a href="" class="product-cat">Machine</a>
@@ -147,6 +163,10 @@
                             <a href=""class="product-thump">
                                 <img src="img/AFG Pro 7.2AI Incline Trainer.png" alt="">
                             </a>
+                            <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
+                            <a href=""class="product-heart"><i class="fa-solid fa-heart"></i></a>
+                            <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                         </div>
                         <div class="product-bottom">
                             <a href="" class="product-cat">Machine</a>
@@ -161,6 +181,10 @@
                             <a href=""class="product-thump">
                                 <img src="img/Marcy Standard Weight Bench.png" alt="">
                             </a>
+                            <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
+                            <a href=""class="product-heart"><i class="fa-solid fa-heart"></i></a>
+                            <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                         </div>
                         <div class="product-bottom">
                             <a href="" class="product-cat">Machine</a>
@@ -175,6 +199,10 @@
                             <a href=""class="product-thump">
                                 <img src="img/ProForm Hiit Trainer Lite 5.9.png" alt="">
                             </a>
+                            <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
+                            <a href=""class="product-heart"><i class="fa-solid fa-heart"></i></a>
+                            <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                         </div>
                         <div class="product-bottom">
                             <a href="" class="product-cat">Machine</a>
@@ -189,6 +217,10 @@
                             <a href=""class="product-thump">
                                 <img src="img/Fitness Gear Pro Olympic Weight Bench.png" alt="">
                             </a>
+                            <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
+                            <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
+                            <a href=""class="product-heart"><i class="fa-solid fa-heart"></i></a>
+                            <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                         </div>
                         <div class="product-bottom">
                             <a href="" class="product-cat">Machine</a>
