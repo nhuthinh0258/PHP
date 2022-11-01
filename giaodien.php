@@ -81,6 +81,123 @@
         </div>
                 
         <main>
+            <div class="headline">
+                <h3>SẢN PHẨM BÁN CHẠY</h3>
+            </div>
+            <ul class="products">
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href=""class="product-thump">
+                                <img src="img/Body Champ Cardio Dual Trainer.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-bottom">
+                            <a href="" class="product-cat">Machine</a>
+                            <a href="" class="product-name">AFG Pro 7.2AI Incline</a>
+                            <div class="product-price">$342.00</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href=""class="product-thump">
+                                <img src="img/Body Solid GCEC340 Cam Series Leg Extension Curl Machine.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-bottom">
+                            <a href="" class="product-cat">Machine</a>
+                            <a href="" class="product-name">AFG Pro 7.2AI Incline</a>
+                            <div class="product-price">$214.00</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href=""class="product-thump">
+                                <img src="img/Bowflex BXE116 Elliptical.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-bottom">
+                            <a href="" class="product-cat">Machine</a>
+                            <a href="" class="product-name">AFG Pro 7.2AI Incline</a>
+                            <div class="product-price">$421.00</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href=""class="product-thump">
+                                <img src="img/ETHOS GHD Weight Bench.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-bottom">
+                            <a href="" class="product-cat">Machine</a>
+                            <a href="" class="product-name">AFG Pro 7.2AI Incline</a>
+                            <div class="product-price">$152.00</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href=""class="product-thump">
+                                <img src="img/AFG Pro 7.2AI Incline Trainer.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-bottom">
+                            <a href="" class="product-cat">Machine</a>
+                            <a href="" class="product-name">AFG Pro 7.2AI Incline</a>
+                            <div class="product-price">$252.00</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href=""class="product-thump">
+                                <img src="img/Marcy Standard Weight Bench.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-bottom">
+                            <a href="" class="product-cat">Machine</a>
+                            <a href="" class="product-name">AFG Pro 7.2AI Incline</a>
+                            <div class="product-price">$412.00</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href=""class="product-thump">
+                                <img src="img/ProForm Hiit Trainer Lite 5.9.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-bottom">
+                            <a href="" class="product-cat">Machine</a>
+                            <a href="" class="product-name">AFG Pro 7.2AI Incline</a>
+                            <div class="product-price">$300.00</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-top">
+                            <a href=""class="product-thump">
+                                <img src="img/Fitness Gear Pro Olympic Weight Bench.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-bottom">
+                            <a href="" class="product-cat">Machine</a>
+                            <a href="" class="product-name">AFG Pro 7.2AI Incline</a>
+                            <div class="product-price">$124.00</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </main>
 
         <footer>
