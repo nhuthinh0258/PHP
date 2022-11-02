@@ -12,7 +12,7 @@ body .wrapper .background {
   position: absolute;
   display: block;
   width: 100%;
-  top: -200px;
+  top: 0px;
 }
 body .wrapper .background img {
   width: 100%;
@@ -88,6 +88,7 @@ ul li a {
   width: 200px;
   border: 1px solid #4a4747;
   display: none;
+  z-index: 1;
 }
 .list li:hover > ul.submenu {
   display: block;
@@ -115,6 +116,7 @@ main {
   max-width: 1170px;
   line-height: 1.15;
   color: black;
+  padding-top: 600px;
 }
 main .headline {
   margin: 40px 0;
@@ -254,4 +256,84 @@ main ul.products li .product-bottom .product-price {
 main ul.products img {
   max-width: 200px;
   height: 190px;
+}
+section {
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+section .slider {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+section .slider .slide-img img {
+  width: auto;
+  max-height: 750px;
+}
+section .slider .slide-text {
+  color: white;
+  max-width: 540px;
+  padding: 100px 0;
+}
+section .slider .slide-text h3 {
+  font-size: 60px;
+}
+section .slider .slide-text h4 {
+  font-size: 40px;
+}
+section .slider .slide-text p {
+  padding-top: 30px;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+section .slider .slide-text button {
+  padding: 20px 60px;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+section .slider .slide-text button:active {
+  transform: scale(0.98);
+}
+section .slider-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid;
+  width: 100%;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 624px;
+  background-color: white;
+}
+section .slider-bottom .sub-slider {
+  flex-basis: 33.33%;
+  height: 260px;
+  box-sizing: border-box;
+}
+section .slider-bottom .sub-slider .img {
+  max-width: 100%;
+  height: auto;
+}
+section .slider-bottom .sub-slider .sub-slider2 {
+  text-align: center;
+}
+section .slider-bottom .sub-slider .sub-slider2 .icon {
+  max-width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+section .slider-bottom .sub-slider .sub-slider2 h5 {
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+section .slider-bottom .sub-slider .sub-slider2 p {
+  font-size: 14px;
+  padding: 20px;
+  color: #777777;
 }

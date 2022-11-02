@@ -28,10 +28,10 @@
                         </ul>
                         <ul>
                             <li>
-                                <a class="home" href="home.php">Classes</a>
+                                <a class="home" href="#">Classes</a>
                                 <ul class="submenu">
-                                    <li><a href="">Menu 2.1</a></li>
-                                    <li><a href="">Menu 2.2</a>
+                                    <li><a href="#">Menu 2.1</a></li>
+                                    <li><a href="#">Menu 2.2</a>
                                         <ul class="submenu">
                                             <li><a href="">Menu 2.1</a></li>
                                             <li><a href="">Menu 2.2</a></li>
@@ -83,9 +83,51 @@
         <div class="background">
             <img src="img/Background.jpg" alt="">
         </div>
-        <div class="slider">
-
-        </div>
+        <section>
+            <div class="slider">
+                <div class="slide-text">
+                    <h3>Dumbbells Shop</h3>
+                    <h4>Best body fitness</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                    <button>SHOP NOW</button>
+                </div>
+                <div class="slide-img">
+                    <img src="img/Layer 3.png" alt="">
+                </div>
+            </div>
+            <div class="slider-bottom">
+                <div class="sub-slider">
+                    <img src="img/5cb04e457e213.jpg" alt="" class="img">
+                </div>
+                <div class="sub-slider">
+                    <div class="sub-slider2">
+                        <img src="img/icon-_1_.jpg" alt=""class="icon">
+                        <h5>STRENGTH</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="sub-slider">
+                    <img src="img/5cee3d334ad30_1.jpg" alt=""class="img">
+                </div>
+                <div class="sub-slider">
+                    <div class="sub-slider2">
+                        <img src="img/icon.jpg" alt=""class="icon">
+                        <h5>DUMBELLS</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="sub-slider">
+                    <img src="img/5cff1632c51da_1.jpg" alt=""class="img">
+                </div>
+                <div class="sub-slider">
+                    <div class="sub-slider2">
+                        <img src="img/icon-_2_.jpg" alt=""class="icon">
+                        <h5>POWER RACK & CAGE</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <main>
             <div class="headline">
                 <h3>SẢN PHẨM BÁN CHẠY</h3>

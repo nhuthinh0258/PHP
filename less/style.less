@@ -12,7 +12,7 @@ body{
             position: absolute;
             display: block;
             width: 100%;
-            top: -200px;
+            top: 0px;
             img{
                 width: 100%;
                 max-height: 950px;
@@ -94,6 +94,7 @@ ul li{
     width: 200px;
     border: 1px solid rgb(74, 71, 71);
     display: none;
+    z-index: 1;
 }
 .list li:hover>ul.submenu{
     display: block;
@@ -120,3 +121,4 @@ footer{
     grid-column: span 12;
 }
 @import 'php.less';
+@import 'slide.less';
