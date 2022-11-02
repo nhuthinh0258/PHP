@@ -1,9 +1,25 @@
 *{
-
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+body{
+    .wrapper{
+        position: relative;
+        .background{
+            z-index: -1;
+            position: absolute;
+            display: block;
+            width: 100%;
+            top: -200px;
+            img{
+                width: 100%;
+                max-height: 950px;
+                filter: brightness(50%);
+            }
+        }
+    }
 }
 
 
@@ -15,6 +31,7 @@
     align-items: center;
 }
 .header{
+    opacity: 0.8;
     background-color: black;
 }
 .container > div{
@@ -101,6 +118,5 @@ ul li{
 
 footer{
     grid-column: span 12;
-    background-color: aquamarine;
 }
 @import 'php.less';

@@ -80,6 +80,12 @@
             </div>
         </div>
                 
+        <div class="background">
+            <img src="img/Background.jpg" alt="">
+        </div>
+        <div class="slider">
+
+        </div>
         <main>
             <div class="headline">
                 <h3>SẢN PHẨM BÁN CHẠY</h3>
@@ -233,9 +239,118 @@
         </main>
 
         <footer>
-        <?php
-            echo ("xin chào");
-            ?>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+            <div class="test">
+                Xin chao
+            </div>
+
         </footer>
     </div>
 </body>

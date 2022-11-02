@@ -19,21 +19,28 @@ main{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        li:hover a.product-cart{
-            top:5px;
-            right:5px;
-        }
-        li:hover a.product-show{
-            top:55px;
-            right:5px;
-        }
-        li:hover a.product-heart{
-            top:105px;
-            right:5px;
-        }
-        li:hover a.product-repeat{
-            top:155px;
-            right:5px;
+        li:hover{
+            .product-item{
+                .product-top{
+                    a.product-cart{
+                        opacity: 1.0;
+                    }
+                    a.product-show{
+                        opacity: 1.0;
+                    }
+                    a.product-heart{
+                        opacity: 1.0;
+                    }
+                    a.product-repeat{
+                        opacity: 1.0;
+                    }
+                    .product-thump{
+                        img{
+                            filter: opacity(80%);
+                        }
+                    }
+                }
+            }
         }
 
         li:hover{
@@ -79,7 +86,10 @@ main{
                     border: 1px solid #bebebe;
                     color:#9c9c9c;
                     position: absolute;
-                    transition: 0.5s;
+                    top:5px;
+                    right:5px;
+                    opacity: 0.0;
+                    transition: all 500ms ease-in-out;;
                 }
                 a.product-show{
                     display: inline-block;
@@ -87,7 +97,10 @@ main{
                     border: 1px solid #bebebe;
                     color:#9c9c9c;
                     position: absolute;
-                    transition: 0.5s;
+                    top:55px;
+                    right:5px;
+                    opacity: 0.0;
+                    transition: all 500ms ease-in-out;;
                 }
                 a.product-heart{
                     display: inline-block;
@@ -95,7 +108,10 @@ main{
                     border: 1px solid #bebebe;
                     color:#9c9c9c;
                     position: absolute;
-                    transition: 0.5s;
+                    top:105px;
+                    right:5px;
+                    opacity: 0.0;
+                    transition: all 500ms ease-in-out;;
                 }
                 a.product-repeat{
                     display: inline-block;
@@ -103,7 +119,10 @@ main{
                     border: 1px solid #bebebe;
                     color:#9c9c9c;
                     position: absolute;
-                    transition: 0.5s;
+                    top:155px;
+                    right:5px;
+                    opacity: 0.0;
+                    transition: all 500ms ease-in-out;;
                 }
             }
 
