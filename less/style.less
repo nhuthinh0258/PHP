@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -31,15 +32,12 @@ body{
     align-items: center;
 }
 .header{
+    padding: 21px 0px;
     opacity: 0.8;
     background-color: black;
 }
 .container > div{
-    width: 270px;
     height: auto;
-}
-.logo{
-    padding: 21px 0px;
 }
 .logo>a>img{
     max-width: 200px;
@@ -47,14 +45,10 @@ body{
 }
 
 .container > :nth-child(3){
-    display: flex;
-    justify-content: flex-end;
     margin: 0;
     padding: 0;
 }
 .container > :nth-child(2){
-    flex-grow: 1;
-    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -62,7 +56,6 @@ body{
     text-decoration: none;
     color: rgb(255, 255, 255,0.8);
     display: block;
-    padding: 38px 28px;
     font-size: 16px;
 }
 .list li a:hover{
@@ -78,14 +71,32 @@ ul li{
     }
 }
 
-.user li a{
-    text-decoration: none;
-    color: white;
-    display: block;
-    margin-left: 54px;
+.user {
+    li{
+        margin: 0 28px;
+        display: inline-block;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
 }
+
+
 .list li{
     position: relative;
+}
+.list{
+    ul{
+
+        .nav-item{
+            margin: 0 28px;
+            display: inline-block;
+        }
+    }
 }
 .list ul.submenu{
     position: absolute;
@@ -116,9 +127,36 @@ ul li{
     left: 200px;
     top :-1px;
 }
+.user li.nav-item{
+    position: relative;
+}
+.user ul.submenu{
+    position: absolute;
+    background-color: black;
+    padding: 15px 0;
+    width: 100px;
+    border: 1px solid #4a4747;
+    display: none;
+    z-index: 1;
+    li{
+        margin: 0;
+        padding: 8px 15px;
+        a{
+            
+            border-bottom: 1px solid #333;
+        }
+    }
+    li:hover > a{
+        color: #a10505;
+    }
+}
+.user li:hover > ul.submenu{
+    display: block;
+}
 
 footer{
     grid-column: span 12;
 }
 @import 'php.less';
 @import 'slide.less';
+@import 'base/login.less';

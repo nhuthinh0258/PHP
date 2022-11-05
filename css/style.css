@@ -27,29 +27,22 @@ body .wrapper .background img {
   align-items: center;
 }
 .header {
+  padding: 21px 0px;
   opacity: 0.8;
   background-color: black;
 }
 .container > div {
-  width: 270px;
   height: auto;
-}
-.logo {
-  padding: 21px 0px;
 }
 .logo > a > img {
   max-width: 200px;
   height: auto;
 }
 .container > :nth-child(3) {
-  display: flex;
-  justify-content: flex-end;
   margin: 0;
   padding: 0;
 }
 .container > :nth-child(2) {
-  flex-grow: 1;
-  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -57,7 +50,6 @@ body .wrapper .background img {
   text-decoration: none;
   color: #ffffff;
   display: block;
-  padding: 38px 28px;
   font-size: 16px;
 }
 .list li a:hover {
@@ -72,14 +64,23 @@ ul li {
 ul li a {
   text-decoration: none;
 }
+.user li {
+  margin: 0 28px;
+  display: inline-block;
+}
 .user li a {
   text-decoration: none;
   color: white;
-  display: block;
-  margin-left: 54px;
+}
+.user li:last-child {
+  margin-right: 0;
 }
 .list li {
   position: relative;
+}
+.list ul .nav-item {
+  margin: 0 28px;
+  display: inline-block;
 }
 .list ul.submenu {
   position: absolute;
@@ -107,6 +108,31 @@ ul li a {
 .list ul.submenu ul.submenu {
   left: 200px;
   top: -1px;
+}
+.user li.nav-item {
+  position: relative;
+}
+.user ul.submenu {
+  position: absolute;
+  background-color: black;
+  padding: 15px 0;
+  width: 100px;
+  border: 1px solid #4a4747;
+  display: none;
+  z-index: 1;
+}
+.user ul.submenu li {
+  margin: 0;
+  padding: 8px 15px;
+}
+.user ul.submenu li a {
+  border-bottom: 1px solid #333;
+}
+.user ul.submenu li:hover > a {
+  color: #a10505;
+}
+.user li:hover > ul.submenu {
+  display: block;
 }
 footer {
   grid-column: span 12;
@@ -257,6 +283,77 @@ main ul.products img {
   max-width: 200px;
   height: 190px;
 }
+main .headline-bottom {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+main .headline-bottom h2 {
+  font-size: 36px;
+  color: #111;
+  padding: 10px 20px;
+  border: 1px solid none;
+  display: inline-block;
+  font-weight: bold;
+}
+main .slick-slider .one-time .slider1 {
+  text-align: center;
+}
+main .slick-slider .one-time .slider1 .image-slider {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+main .slick-slider .one-time .slider1 .image-slider img {
+  width: auto;
+  height: 100%;
+  margin-left: -60px;
+  margin-right: -74px;
+  margin-bottom: -64px;
+}
+main .slick-slider .one-time .slider1 .text1 {
+  font-size: 18px;
+  color: #777777;
+  margin: 30px 0;
+}
+main .slick-slider .one-time .slider1 .text2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+main .slick-slider .one-time .slider1 .text3 {
+  font-size: 14px;
+  color: #777777;
+}
+main .bottom {
+  border-top: 1px solid #c8c7c7;
+  margin-top: 100px;
+  display: flex;
+  height: 150px;
+  align-items: center;
+}
+main .bottom .container-bottom {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+main .bottom .container-bottom .row {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .bottom .container-bottom .row .item1 {
+  flex-basis: 16.66%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
 section {
   max-width: 1170px;
   margin: 0 auto;
@@ -336,4 +433,60 @@ section .slider-bottom .sub-slider .sub-slider2 p {
   font-size: 14px;
   padding: 20px;
   color: #777777;
+}
+.wrapper-login {
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-login #loginform {
+  box-shadow: 0px 0px 8px 2px rgba(255, 254, 254, 0.8);
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  flex-grow: 1;
+  padding: 30px 30px 40px;
+}
+.wrapper-login #loginform h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.wrapper-login #loginform .form-group {
+  border-bottom: 1px solid #777777;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.wrapper-login #loginform .form-group .form-input {
+  flex-grow: 1;
+  color: white;
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.wrapper-login #loginform .form-group i {
+  color: white ;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.wrapper-login #loginform .form-group .eye i {
+  padding-right: 0;
+}
+.wrapper-login #loginform .form-submit {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 20px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.wrapper-login #loginform .form-submit:hover {
+  border: 1px solid #54a0ff;
+  color: #54a0ff;
 }

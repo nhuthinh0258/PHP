@@ -1,3 +1,12 @@
+<?php
+//Kiểm tra thẻ làm việc
+    session_start();
+    if(!isset($_SESSION['isLoginok'])){
+        header("location:login.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,17 +74,25 @@
                             </li>
 
                             <li>
-                                <a class="control-item user" href="login.php"><i class="fa-solid fa-user"></i></a>
-                            </li>
-
-                            <li>
                                 <a class="control-item cart" href="home.php"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <?php
+                                if(isset($_SESSION['isLoginok']))
+                                {
+                                    echo "<a class='user'>Xin chào: {$_SESSION['isLoginok']}</a>";
+                                ?>
+                                <ul class="submenu">
+                                    <li><a href="#">Đơn hàng</a></li>
+                                    <li><a href="logout.php">Logout</a></li> 
+                                <?php
+                                }
+                                ?>
                             </li>
                         </ul>
                     </div>
             </div>
-        </div>
-                
+        </div>               
         <div class="background">
             <img src="img/Background.jpg" alt="">
         </div>
@@ -333,124 +350,6 @@
             </div>
         </main>
 
-        <footer>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-            <div class="test">
-                Xin chao
-            </div>
-
-        </footer>
-    </div>
-
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/scripts.js"></script>
-</body>
-</html>
+<?php
+require ("template/gymload-footer.php")
+?>
