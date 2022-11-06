@@ -447,6 +447,15 @@ section .slider-bottom .sub-slider .sub-slider2 p {
   flex-grow: 1;
   padding: 30px 30px 40px;
 }
+.wrapper-login #loginform .sub-control .sub {
+  margin: 5px 0;
+}
+.wrapper-login #loginform .sub-control .sub a {
+  color: white;
+}
+.wrapper-login #loginform .sub-control .sub a:hover {
+  color: #54a0ff;
+}
 .wrapper-login #loginform h1 {
   text-align: center;
   color: white;
@@ -487,6 +496,71 @@ section .slider-bottom .sub-slider .sub-slider2 p {
   margin-top: 30px;
 }
 .wrapper-login #loginform .form-submit:hover {
+  border: 1px solid #54a0ff;
+  color: #54a0ff;
+}
+.wrapper-signup {
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-signup #signupform {
+  box-shadow: 0px 0px 8px 2px rgba(255, 254, 254, 0.8);
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  flex-grow: 1;
+  padding: 30px 30px 40px;
+}
+.wrapper-signup #signupform .sub-control .sub {
+  margin: 5px 0;
+}
+.wrapper-signup #signupform .sub-control .sub a {
+  color: white;
+}
+.wrapper-signup #signupform .sub-control .sub a:hover {
+  color: #54a0ff;
+}
+.wrapper-signup #signupform h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.wrapper-signup #signupform .form-group {
+  border-bottom: 1px solid #777777;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.wrapper-signup #signupform .form-group .form-input {
+  flex-grow: 1;
+  color: white;
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.wrapper-signup #signupform .form-group i {
+  color: white ;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.wrapper-signup #signupform .form-group .eye i {
+  padding-right: 0;
+}
+.wrapper-signup #signupform .form-submit {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 20px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.wrapper-signup #signupform .form-submit:hover {
   border: 1px solid #54a0ff;
   color: #54a0ff;
 }
