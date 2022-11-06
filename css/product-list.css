@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+body .wrapper {
+  position: relative;
+}
+body .wrapper .background {
+  z-index: -1;
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 0px;
+}
+body .wrapper .background img {
+  width: 100%;
+  max-height: 950px;
+  filter: brightness(50%);
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  padding: 21px 0px;
+  opacity: 0.8;
+  background-color: black;
+}
+.container > div {
+  height: auto;
+}
+.logo > a > img {
+  max-width: 200px;
+  height: auto;
+}
+.container > :nth-child(3) {
+  margin: 0;
+  padding: 0;
+}
+.container > :nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+.list li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  font-size: 16px;
+}
+.list li a:hover {
+  color: #FFFFFF;
+}
+.list li ul.submenu li:hover > a {
+  color: #a10505;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+.user li {
+  margin: 0 28px;
+  display: inline-block;
+}
+.user li a {
+  text-decoration: none;
+  color: white;
+}
+.user li:last-child {
+  margin-right: 0;
+}
+.list li {
+  position: relative;
+}
+.list ul .nav-item {
+  margin: 0 28px;
+  display: inline-block;
+}
+.list ul.submenu {
+  position: absolute;
+  background-color: black;
+  padding: 15px 0;
+  width: 200px;
+  border: 1px solid #4a4747;
+  display: none;
+  z-index: 1;
+}
+.list li:hover > ul.submenu {
+  display: block;
+}
+.list ul.submenu a {
+  padding: 8px 15px;
+  border-bottom: 1px solid #333;
+  left: 0;
+}
+.list ul.submenu li:hover > a {
+  border-bottom: 1px solid #686666;
+}
+.list ul.submenu li:last-child a {
+  border-bottom: none;
+}
+.list ul.submenu ul.submenu {
+  left: 200px;
+  top: -1px;
+}
+.user li.nav-item {
+  position: relative;
+}
+.user ul.submenu {
+  position: absolute;
+  background-color: black;
+  padding: 15px 0;
+  width: 100px;
+  border: 1px solid #4a4747;
+  display: none;
+  z-index: 1;
+}
+.user ul.submenu li {
+  margin: 0;
+  padding: 8px 15px;
+}
+.user ul.submenu li a {
+  border-bottom: 1px solid #333;
+}
+.user ul.submenu li:hover > a {
+  color: #a10505;
+}
+.user li:hover > ul.submenu {
+  display: block;
+}
+.wp-content {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  height: auto;
+}
+.wp-content .sidebar {
+  flex-basis: 20%;
+  background-color: aquamarine;
+}
+.wp-content .content {
+  flex-basis: 80%;
+}
+.wp-content .content .headline {
+  margin: 40px 0;
+  text-align: center;
+}
+.wp-content .content .headline h3 {
+  font-size: 18px;
+  color: #111;
+  padding: 10px 20px;
+  border: 1px solid #bebebe;
+  display: inline-block;
+  font-weight: 600;
+}
+.wp-content .content ul.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wp-content .content ul.products li:hover .product-item .product-top a.product-cart {
+  opacity: 1;
+}
+.wp-content .content ul.products li:hover .product-item .product-top a.product-show {
+  opacity: 1;
+}
+.wp-content .content ul.products li:hover .product-item .product-top a.product-heart {
+  opacity: 1;
+}
+.wp-content .content ul.products li:hover .product-item .product-top a.product-repeat {
+  opacity: 1;
+}
+.wp-content .content ul.products li:hover .product-item .product-top .product-thump img {
+  filter: opacity(80%);
+}
+.wp-content .content ul.products li:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.wp-content .content ul.products li {
+  flex-basis: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s;
+}
+.wp-content .content ul.products li .product-top {
+  position: relative;
+  overflow: hidden;
+}
+.wp-content .content ul.products li .product-top .product-thump {
+  display: block;
+}
+.wp-content .content ul.products li .product-top .product-thump img {
+  display: block;
+}
+.wp-content .content ul.products li .product-top a.product-cart:hover {
+  background-color: red;
+  color: white;
+}
+.wp-content .content ul.products li .product-top a.product-show:hover {
+  background-color: red;
+  color: white;
+}
+.wp-content .content ul.products li .product-top a.product-heart:hover {
+  background-color: red;
+  color: white;
+}
+.wp-content .content ul.products li .product-top a.product-repeat:hover {
+  background-color: red;
+  color: white;
+}
+.wp-content .content ul.products li .product-top a.product-cart {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #bebebe;
+  color: #9c9c9c;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.wp-content .content ul.products li .product-top a.product-show {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #bebebe;
+  color: #9c9c9c;
+  position: absolute;
+  top: 55px;
+  right: 5px;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.wp-content .content ul.products li .product-top a.product-heart {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #bebebe;
+  color: #9c9c9c;
+  position: absolute;
+  top: 105px;
+  right: 5px;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.wp-content .content ul.products li .product-top a.product-repeat {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid #bebebe;
+  color: #9c9c9c;
+  position: absolute;
+  top: 155px;
+  right: 5px;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+.wp-content .content ul.products li .product-bottom {
+  padding: 10px 0;
+}
+.wp-content .content ul.products li .product-bottom a {
+  display: block;
+}
+.wp-content .content ul.products li .product-bottom .product-cat {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #9c9c9c;
+  padding: 5px 10px;
+}
+.wp-content .content ul.products li .product-bottom .product-name {
+  color: #111;
+  font-weight: 500;
+  padding: 3px 10px;
+}
+.wp-content .content ul.products li .product-bottom .product-price {
+  color: #111;
+  font-weight: 700;
+  padding: 0 10px;
+}
+.wp-content .content ul.products img {
+  max-width: 200px;
+  height: 190px;
+}
+.wp-content .content .list_trang {
+  text-align: right;
+}
+.wp-content .content .list_trang li {
+  display: inline-block;
+  margin: 2px;
+}
+.wp-content .content .list_trang li a {
+  padding: 6px 10px;
+  background-color: #9c9c9c;
+  color: white;
+  text-align: center;
+}
+.wp-content .content .list_trang li a:hover {
+  color: #763626;
+}

@@ -31,7 +31,7 @@
                             <li class="nav-item">
                                 <a class="home" href="#">Classes</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Menu 2.1</a></li>
+                                    <li><a href="product-list.php">Giày</a></li>
                                     <li><a href="#">Menu 2.2</a>
                                         <ul class="submenu">
                                             <li><a href="">Menu 2.1</a></li>
