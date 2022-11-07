@@ -32,21 +32,21 @@ function validateForm(){
     let lblemail = document.getElementById('lblemail');
     let lblmatkhau = document.getElementById('lblmatkhau');
   
-    //Kiểm tra tên đăng nhập có hợp lệ không
+
 
       //Kiểm tra có để trống tên đăng nhập không
       if(txtuser.value == ''){
-        lbluser.textContent = 'Bạn chưa nhập trường này';
+        lbluser.textContent = 'Bạn chưa nhập tên đăng nhập';
         lbluser.style.color = 'red';
         txtuser.focus();
         return false;
       };
 
-            //Kiểm tra có để trống mật khẩu không
-            if(txtmatkhau.value == ''){
-                lblmatkhau.textContent = 'Bạn chưa nhập trường này';
-                lblmatkhau.style.color = 'red';
-                txtmatkhau.focus();
-                return false;
-              };
+        //Kiểm tra có để trống mật khẩu không
+    if(txtmatkhau.value == ''){
+        lblmatkhau.textContent = 'Bạn chưa nhập mật khẩu';
+        lblmatkhau.style.color = 'red';
+        txtmatkhau.focus();
+        return false;
+    };
     }

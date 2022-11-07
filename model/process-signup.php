@@ -1,7 +1,18 @@
 <?php
     //signup.php truyền
-    if(!isset($_POST['btnsignup'])){
-        header("location:signup.php");
+    if(isset($_POST['btnsignup'])){
+        if(isset($_POST['txtemail']) && $_POST['txtemail'] != ''){
+            include "../mailer.php";
+            if(SendEmailActiveRegister($_POST['txtemail'])){
+                header("location:../template/register-comfirm.php");
+            }
+            else{
+                header("location:../template/error.php");
+            }
+        }
+    }
+    else{
+        header("location:../signup.php");
     }
 
     $user=$_POST['txtusername'];
@@ -28,18 +39,18 @@
     }
     else
     {
-        $pass_md5= md5($pass);
         $pass_hash=password_hash($pass,PASSWORD_DEFAULT);
-        $sql02 = "Insert into db_user (tendangnhap, email, matkhau) values('$user','$email','$pass_hash')";
+        $sql02 = "Insert into db_user (tendangnhap, email, matkhau,status) values('$user','$email','$pass_hash',0)";
         $result02= mysqli_query($conn,$sql02);
 
         if($result02 == true)
         {
-            header("location:../login.php");
+            header("location:../template/register-comfirm.php");
         }
         else{
-            $error="Đã xảy ra lỗi, mời thử lại";
-            header("location:../signup.php?error=$error");
+            header("location:../template/error.php");
+            // $error="Đã xảy ra lỗi, mời thử lại";
+            // header("location:../signup.php?error=$error");
         }
     }
 

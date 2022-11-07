@@ -45,7 +45,7 @@ require ("template/gymload-header.php")
                 Xin chao
             </div>
         </footer>
-    </div>
+</div>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/login.js"></script>

@@ -18,28 +18,50 @@ if(isset($_POST['btnlogin'])){
     $result = mysqli_query($conn,$sql);
 
     if(mysqli_num_rows($result)>0){
+        
         $row=mysqli_fetch_assoc($result);
 
         //Lấy ra chuỗi mật khẩu băm
         $pass_hash=$row['matkhau'];
+        $active = $row['status'];
 
-        //So sánh và kiểm tra mật khẩu thô với mật khẩu băm
-        if(password_verify($pass,$pass_hash)){
-            
-        //Cấp thẻ làm việc
-        $_SESSION['isLoginok']=$user;
-        header("location:../giaodien-user.php");
+        if($active ==1){
+            if(password_verify($pass,$pass_hash)){
+                $_SESSION['isLoginok']=$user;
+                header("location:../giaodien-user.php");
+            }
+            else{
+                $error="mật khẩu không chính xác";
+                header("location:../login.php?error=$error");
+            }
         }
         else{
-            $error="mật khẩu không chính xác";
+            $error="Tài khoản chưa kích hoạt";
             header("location:../login.php?error=$error");
         }
     }
-    else
-    {
+    else{
         $error="tài khoản không chính xác";
         header("location:../login.php?error=$error");
     }
+
+    //     //So sánh và kiểm tra mật khẩu thô với mật khẩu băm
+    //     if(password_verify($pass,$pass_hash)){
+            
+    //     //Cấp thẻ làm việc
+    //     $_SESSION['isLoginok']=$user;
+    //     header("location:../giaodien-user.php");
+    //     }
+    //     else{
+    //         $error="mật khẩu không chính xác";
+    //         header("location:../login.php?error=$error");
+    //     }
+    // }
+    // else
+    // {
+    //     $error="tài khoản không chính xác";
+    //     header("location:../login.php?error=$error");
+    // }
 
 
     // Bước 03: Đóng kết nối
