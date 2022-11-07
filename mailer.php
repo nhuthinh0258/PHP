@@ -11,7 +11,7 @@ require 'PHPMailer/Exception.php';
 require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
 
-function SendEmailActiveRegister($email){
+function SendEmailActiveRegister($email, $link){
      //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 global $username;
@@ -45,7 +45,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = '[Gymmax] Kích hoạt tài khoản';
-    $mail->Body    = 'Nhấn đường dẫn sau để kích hoạt tài khoản <a href="http://nhuthinh0258.live/neweb/giaodien.php">Click here</a>';
+    $mail->Body    = 'Cảm ơn bạn đã đăng ký làm thành viên của cộng đồng gymax, nhấn vào link sau để kích hoạt tài khoản: ' .$link;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     if($mail->send()){

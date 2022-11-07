@@ -80,7 +80,7 @@
                                 <?php
                                 if(isset($_SESSION['isLoginok']))
                                 {
-                                    echo "<a class='user'>Xin chào: {$_SESSION['isLoginok']}</a>";
+                                    echo "<a class='user'>{$_SESSION['isLoginok']}</a>";
                                 ?>
                                 <ul class="submenu">
                                     <li><a href="#">Đơn hàng</a></li>
