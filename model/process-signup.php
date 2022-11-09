@@ -1,5 +1,10 @@
 <?php
     //signup.php truyền
+    session_start();
+    if(!isset($_SESSION['isLoginok'])){
+        header("location:../login.php");
+    }
+
 
     $user=$_POST['txtusername'];
     $email=$_POST['txtemail'];
@@ -35,23 +40,30 @@
             }
             else
             {
-                $token = md5($_POST['txtemail']).rand(0,9999);
-                $pass_hash=password_hash($pass,PASSWORD_DEFAULT);
-                $sql03 = "Insert into db_user (tendangnhap, email, matkhau, email_verification_link) values ('$user','$email','$pass_hash','$token')";
-                //Lưu vào database
-                $result03= mysqli_query($conn,$sql03);
+                if($_POST["txtmatkhau"] === $_POST["txretmatkhau"]){
+                    $token = md5($_POST['txtemail']).rand(0,9999);
+                    $pass_hash=password_hash($pass,PASSWORD_DEFAULT);
+                    $sql03 = "Insert into db_user (tendangnhap, email, matkhau, email_verification_link) values ('$user','$email','$pass_hash','$token')";
+                    //Lưu vào database
+                    $result03= mysqli_query($conn,$sql03);
 
-                //Yêu cầu người dùng kích hoạt
-                $link = "<a href='http://nhuthinh0258.live/neweb/activation.php?key=".$email."&token=".$token."'>Click here</a>";
-                //Quá trình gửi email
-                include "../mailer.php";
-                if(SendEmailActiveRegister($email, $link))
-                {
-                    header("location:../template/register-comfirm.php");
+                    //Yêu cầu người dùng kích hoạt
+                    $link = "<a href='http://nhuthinh0258.live/neweb/activation.php?key=".$email."&token=".$token."'>Click here</a>";
+                    //Quá trình gửi email
+                    include "../mailer.php";
+                    if(SendEmailActiveRegister($email, $link))
+                    {
+                        header("location:../template/register-comfirm.php");
+                    }
+                    else
+                    {
+                        header("location:../template/error.php");
+                        
+                    }
                 }
-                else
-                {
-                    header("location:../template/error.php");
+                else{
+                    $error="Mật khẩu không khớp";
+                    header("location:../signup.php?error=$error");
                 }
             }
     
@@ -69,7 +81,7 @@
     }
     else
     {
-
+        header("location:../template/error.php");
     }
 
 

@@ -1,6 +1,6 @@
 <?php
 $username='biminh0369@gmail.com';
-$password='iusdhlvsauslkeca';
+$password='gxanggequbxlpupy';
 
 //Khai báo thư viện PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;

@@ -1,0 +1,282 @@
+@media all and (max-width: 1170px) {
+    .slider {
+        &-content {
+            &-inner {
+                margin-left: 100px;
+                .slide-title {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+    .banner {
+        &-left {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+@media all and (max-width: 1024px) {
+    .header {
+        .logo-mobile {
+            display: block;
+        }
+        &-top {
+            &-inner {
+                .web-info {
+                    &-button {
+                        margin: 0;
+                        .info-content {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom {
+            &-inner {
+                .logo {
+                    display: none;
+                }
+                .form-control {
+                    width: 100%;
+                    .search {
+                        width: 100%;
+                        order: 2;
+                    }
+                    .setting {
+                        order: 1;
+                        margin-left: 0;
+                        margin-right: 19px;
+                    }
+                    .cart {
+                        order: 3;
+                    }
+                }
+            }
+        }
+    }
+    .menu-bar {
+        &-inner {
+            nav {
+                .nav-icon {
+                    display: block;
+                }
+                .navbar {
+                    .transit(all, .5s);
+                    .nav-title {
+                        display: block;
+                    }
+                    .transformer(translateX(110%));
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 999;
+                    height: 100vh;
+                    width: 40vw;
+                    background-color: #fff;
+                    -webkit-box-shadow: -8px -7px 6px -2px rgba(187,187,187,1);
+                    -moz-box-shadow: -8px -7px 6px -2px rgba(187,187,187,1);
+                    box-shadow: -8px -7px 6px -2px rgba(187,187,187,1);
+                    .nav-item {
+                        display: block;
+                        margin: 0;
+                        padding: 10px 15px;
+                        border-bottom: 1px solid #bbb;
+                        a {
+                            color: @main-color;
+                        }
+                    }
+                    
+                }
+                .active {
+                    .transformer(translateX(0));
+                }
+            }
+        }
+    }
+    .slider {
+        &-content {
+            &-inner {
+                width: 66.6667%;
+                .slide-title {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+                .slide-summary {
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+    .strength {
+        height: auto;
+        &-item {
+            width: 50%;
+        }
+    }
+    .banner {
+        .title {
+            font-size: 20px;
+        }
+        .summary {
+            font-size: 16px;
+        }
+        &-left {
+            &-detail {
+                bottom: 25px;
+                .banner-countdown {
+                    span {
+                        font-size: 18px;
+                        margin-bottom: -15px;
+                    }
+                    .times {
+                        width: 50px;
+                        height: 52px;
+                    }
+                }
+            }
+        }
+        &-right {
+            &-content {
+                left: 15px;
+                .sale-number {
+                    font-size: 50px;
+                }
+            }
+        }
+    }  
+}
+@media all and (max-width: 768px) {
+    .menu-bar {
+        &-inner {
+            nav {
+                .navbar {
+                    width: 50vw;
+                }
+            }
+        }
+    }
+    .slider {
+        &-content {
+            &-inner {
+                margin-left: 0px;
+                .slide-title {
+                    font-size: 38px;
+                    line-height: 45px;
+                }
+                .slide-summary {
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .banner {
+        &-left {
+            width: 100%;
+            &-detail {
+                .banner-countdown {
+                    .times {
+                        width: 60px;
+                        height: 62px;
+                    }
+                }
+            }
+        }
+        &-right {
+            width: 100%;
+            margin: 0;
+            .banner-col {
+                display: flex;
+                margin: 0 -15px;
+                flex-wrap: wrap;
+            }
+            &-item {
+                .col (50%);
+            }
+            &-content {
+                left: 30px;
+            }
+        }
+    }
+    
+}
+@media all and (max-width: 576px) {
+    .header {
+        &-bottom {
+            &-inner {
+                .form-control {
+                    .search {
+                        form {
+                            .search-sl {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu-bar {
+        &-inner {
+            nav {
+                .navbar {
+                    width: 70vw;
+                }
+            }
+        }
+    }
+    .slider {
+        &-content {
+            top: 15%;
+            &-inner {
+                margin-left: 0px;
+                .slide-title {
+                    font-size: 23px;
+                    line-height: 28px;
+                }
+                .slide-summary {
+                    font-size: 13px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .slide-btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .strength {
+        &-item {
+            width: 100%;
+        }
+    }
+    .banner {
+        &-left {
+            &-detail {
+                .banner-countdown {
+                    .times {
+                        width: 50px;
+                        height: 52px;
+                    }
+                }
+            }
+        }
+        &-right {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}
+@media all and (max-width: 420px) {
+    .header {
+        &-top {
+            .sl-language.in-active {
+                display: none;
+            }
+        }
+    }
+}

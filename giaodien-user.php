@@ -85,6 +85,7 @@
                                 <ul class="submenu">
                                     <li><a href="#">Đơn hàng</a></li>
                                     <li><a href="logout.php">Logout</a></li> 
+                                </ul>
                                 <?php
                                 }
                                 ?>

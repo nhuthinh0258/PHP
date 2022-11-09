@@ -2,9 +2,9 @@
     // login.php TRUYỀN DỮ LIỆU SANG
     session_start();
 
-if(isset($_POST['btnlogin'])){
-        $user=$_POST['txtusername'];
-        $pass=$_POST['txtmatkhau'];
+if(isset($_POST['btnloginad'])){
+        $user=$_POST['username'];
+        $pass=$_POST['password'];
     
 
     // Bước 01: Kết nối Database Server
@@ -27,35 +27,36 @@ if(isset($_POST['btnlogin'])){
         $active2 = $row['admin'];
 
         if($active ==1){
-            if($active2==0){
+            if($active2 ==1){
                 if(password_verify($pass,$pass_hash)){
-                    $_SESSION['isLoginok']=$user;
-                    header("location:../giaodien-user.php");
+                    $_SESSION['isLoginad']=$user;
+                    header("location:../admin.php");
                 }
                 else{
                     $error="mật khẩu không chính xác";
-                    header("location:../login.php?error=$error");
+                    header("location:../admin-login.php?error=$error");
                 }
             }
             else{
                 $error="Bạn không thể đăng nhập vào đây";
-                header("location:../login.php?error=$error");
+                header("location:../admin-login.php?error=$error");
             }
         }
         else{
             $error="Tài khoản chưa kích hoạt";
-            header("location:../login.php?error=$error");
+            header("location:../admin-login.php?error=$error");
         }
     }
     else{
         $error="tài khoản không chính xác";
-        header("location:../login.php?error=$error");
+        header("location:../admin-login.php?error=$error");
     }
+
 
     // Bước 03: Đóng kết nối
     mysqli_close($conn);
 }
 else{
-    header("location: ../login.php");
+    header("location: ../admin-login.php");
 }
 ?>

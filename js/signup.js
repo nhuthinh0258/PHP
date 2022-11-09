@@ -2,11 +2,13 @@ function validateForm(){
     let txtemail = document.getElementById('txtemail');
     let txtuser = document.getElementById('txtusername');
     let txtmatkhau = document.getElementById('txtmatkhau');
+    let txtcmatkhau = document.getElementById('txtcmatkhau');
   
   
     let lbluser = document.getElementById('lblusername');
     let lblemail = document.getElementById('lblemail');
     let lblmatkhau = document.getElementById('lblmatkhau');
+    let lblcmatkhau = document.getElementById('lblcmatkhau')
   
     //Kiểm tra tên đăng nhập có hợp lệ không
     let userPattern = /^[a-z0-9_-]{3,16}$/;
@@ -37,6 +39,7 @@ function validateForm(){
         txtemail.focus();
         return false;
       };
+
   }
   
   $(document).ready(function(){

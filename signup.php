@@ -22,7 +22,7 @@ require ("template/gymload-header.php")
         <br>
         <div class="form-group">
             <i class="fa-solid fa-key"></i>
-            <input type="password" class="form-input" placeholder="Mật khẩu" name="txtmatkhau" id="txtmatkhau" required>
+            <input type="password" class="form-input" placeholder="Mật khẩu" name="txtmatkhau" id="txtmatkhau" onkeyup='check();' required>
             <div class="eye" id="eye">
                 <i class="fa-solid fa-eye"></i>
             </div>
@@ -31,11 +31,12 @@ require ("template/gymload-header.php")
         <br>
         <div class="form-group">
             <i class="fa-solid fa-key"></i>
-            <input type="password" class="form-input" placeholder="Nhập lại mật khẩu" name="txretmatkhau" id="txtrematkhau" required>
+            <input type="password" class="form-input" placeholder="Nhập lại mật khẩu" name="txtcmatkhau" id="txtcmatkhau" onkeyup='check();' required>
             <div class="eye" id="eye2">
                 <i class="fa-solid fa-eye"></i>
             </div>
         </div>
+        <span name="lblcmatkhau" id="lblcmatkhau"></span>
 
         <?php
             if(isset($_GET['error'])){

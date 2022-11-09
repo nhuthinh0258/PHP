@@ -1,5 +1,5 @@
 <?php
-require ("model/process-product-list.php")
+require ("model/process-product-list.php");
 ?>
 
 
@@ -100,7 +100,7 @@ require ("model/process-product-list.php")
                         <div class="product-item">
                             <div class="product-top">
                                 <a href=""class="product-thump">
-                                    <img src="img-product/<?=$item['image']?>" alt="">
+                                    <img src="img-product/<?=$item['file_name']?>" alt="">
                                 </a>
                                 <a href="" class="product-cart"><i class="fa-solid fa-basket-shopping"></i></a>
                                 <a href=""class="product-show"><i class="fa-solid fa-eye"></i></a>
@@ -108,7 +108,7 @@ require ("model/process-product-list.php")
                                 <a href=""class="product-repeat"><i class="fa-sharp fa-solid fa-repeat"></i></a>
                             </div>
                             <div class="product-bottom">
-                                <a href="" class="product-cat"><?=$item['loaisp']?></a>
+                                <a href="" class="product-cat"><?=$item['ten_loaisp']?></a>
                                 <a href="" class="product-name"><?=$item['tensp']?></a>
                                 <div class="product-price"><?=$item['giatien']?></div>
                             </div>
